@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Playfair+Display:wght@600&family=Vidaloka&family=Work+Sans:wght@100;300;400;800&display=swap');
+*{  box-sizing: border-box;
+    font-family:'Work Sans';
+    margin: 0;
+    padding: 0;
+    }
+html{
+    
+    scroll-behavior: smooth;
+
+}
+
+body {
+    background: white;
+}
+
+
+/* fondo del header */
+.contenedor-header {
+   
+}
+
+.contenedor-header header {
+        max-width: 1100px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+}
+
+/* NOMBRE EN EL HEADER */
+.contenedor-header header .logo a{
+    font-family: 'Playfair Display';
+    font-size: 36px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.contenedor-header header .logo img{
+    position: absolute;
+    width: 80px;
+    border-bottom: 100px;
+    border-color: #0066ff;
+    border-width: 3px;
+}
+
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+
+}
+
+/* cinta header letras */
+
+.contenedor-header header nav ul li a{
+    font-size: small;
+    text-align: none;
+    color: #ea8f2e;
+    margin: 0 5px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+
+/* color de la animacion en los botones*/
+}
+.contenedor-header header nav ul li a:hover {
+    color: #0066ff;
+}
+/* icono hamburguesa*/
+.nav-responsive{
+    background-color: #0066ff;
+    color: #ea8f2e;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+
+}
+/*background image*/
+.backimg {
+    position: fixed;
+    background-size: cover;
+    display: flex;
+    z-index: -1;
+}
+
+/* seccion start */
+.start{
+    background-size: cover;
+    height: 100vh;
+    color: #ea8f2e;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ea8f2e;
+}
+
+/* cuadro que contiene la foto de perfil y el nombre*/
+
+.start .contenido-banner {
+    
+   padding-left: 10%;
+   padding-bottom: 200px;   
+}
+
+.start .contenido-banner img{
+    margin-top: 40px;
+    
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+
+
+}
+
+.start .contenido-banner h1{
+    color: #ea8f2e;
+    margin-top: 100px;
+    font-size: 80px;
+    font-family: Vidaloka;
+}
+.start .contenido-banner h2{
+    font-size: 30px;
+    border: 3px #ea8f2e;
+    font-weight: normal; 
+    margin-top: 10px;
+    border-bottom: 1px solid #ea8f2e;
+}
+
+.start .contenido-banner .redes {
+    margin-left: 30px;
+    margin-bottom: 0px;
+}
+
+
+.start .contenido-banner .redes a{
+    color: #ea8f2e;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #ffffff00;
+    
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+    padding-top: 5px;
+    
+}
+
+/*hover de los botones para redes sociales*/
+/*instagram*/
+.start .contenido-banner .redes  a:nth-child(1):hover{
+
+    background: linear-gradient(344deg, rgba(188,0,255,1) 38%, rgba(255,0,0,1) 49%, rgba(253,85,29,1) 53%, rgba(253,104,30,1) 58%, rgba(255,238,40,1) 65%);
+    
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+   
+}
+/*twitch*/
+.start .contenido-banner .redes a:nth-child(2):hover{
+    background: linear-gradient(90deg, rgba(129,43,255,1) 15%, rgba(145,70,255,1) 82%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/*linkedin*/
+.start .contenido-banner .redes a:nth-child(3):hover{
+    
+    background: linear-gradient(90deg, rgba(0,106,162,1) 15%, rgba(0,119,181,1) 82%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/*tumblr*/
+.start .contenido-banner .redes a:nth-child(4):hover{
+    
+    
+    background: linear-gradient(0deg, rgba(255,211,168,1) 30%, rgba(255,150,45,1) 41%, rgba(17,37,60,1) 45%, rgba(255,236,219,1) 48%, rgba(255,212,174,1) 52%, rgba(223,190,246,1) 59%, rgba(218,175,255,1) 63%, rgba(126,96,187,1) 70%);
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/*youtube*/
+.start .contenido-banner .redes a:nth-child(5):hover{
+    
+    background: linear-gradient(90deg, rgba(227,0,0,1) 15%, rgba(255,0,0,1) 82%);
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*ABOUT ME*/
+.aboutme {
+    color:#fff;
+    padding: 50px 20px;
+    background-color: #085549cc;
+    mix-blend-mode: multiply;
+    mix-blend-mode: hard-light;
+    border-bottom: 1px solid #fff;
+}
+
+.aboutme .contenido-seccion {
+    max-width: 1100px;
+    margin:auto;
+}
+
+.aboutme .contenido-seccion h2 {
+    
+    font-size: 48px;
+    font-family: "Playfair Display";
+    text-align: center;
+    padding: 20px 0;
+
+}
+.aboutme .contenido-seccion p {
+    font-size: 18px;
+    font-family: 'Work Sans';
+    line-height: 22px;
+    margin-bottom: 80px;
+
+}
+
+.aboutme .contenido-seccion p span {
+    color: #ea8f2e;
+    font-family: bold;
+    font-size: 23px;
+}
+.aboutme .fila {
+    display: flex;
+    padding-bottom: 50px;
+}
+.aboutme .fila .col {
+    width: 50%;
+    
+}
+/*este cuadro es para bajar la info de contacto*/
+
+.aboutme .fila h3 {
+    font-size: 28px;
+    font-family: 'PLayfair Display';
+    margin-bottom: 25px;
+
+}
+.aboutme .fila .col ul li {
+    margin: 12px 0;
+}
+.aboutme .fila .col ul li strong{
+    display: inline-block;
+    color:#ea8f2e;
+    width: 130px;
+
+}
+.aboutme .fila .col ul li span {
+    color: #fff;
+    padding: 5px;
+    border-radius: 40px;
+    font-weight: bold;
+}
+
+/*este es para que se pueda ver como los iconos de software*/
+.aboutme .fila .col .contenido-software {
+    display: flex;
+    flex-wrap: wrap;
+}
+.aboutme .fila .col .contenido-software .software{
+    width: 110px;
+    height: 110px;
+    background-color: #151515;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+.aboutme .fila .col .contenido-software .software i {
+    font-size: 30px;
+    margin-bottom: 10px;
+
+}
+/*boton descargar*/
+.aboutme button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.aboutme button .overlay {
+    position:absolute;
+    top:0;
+    left:0;
+    width:0;
+    height: 100%;
+    background-color: #d3a724;
+    z-index: -1;
+    transition: 1s;
+}
+.aboutme button:hover .overlay{
+    width: 100%;
+}
+/*Seccion Skill*/
+.skills {
+    
+    background-color: #321c64;
+    color:#fff;
+    padding: 12px 20px;
+    padding-bottom: 80px;
+    mix-blend-mode: multiply;
+    mix-blend-mode: hard-light;
+    
+}
+.skills .contenido-seccion .skill {
+    padding: 5px;
+    align-items: center;
+}
+
+.skills .contenido-seccion {
+    max-width: 1100px;
+    margin:auto;
+}
+
+.skills h2{
+    
+    font-size: 48px;
+    font-family: "Playfair Display";
+    text-align: center;
+    padding: 20px 0;
+    padding-bottom: 80px;
+
+}
+.skills .fila {
+    display:flex;
+    flex-direction:column;
+}
+.skills .fila .col {
+    width: 50%;
+    padding: 0 20px;
+}
+
+.skills .skill > span {
+    display: block;
+    margin-bottom: 20px;
+}
+.skills .skill > i {
+    font-weight: bold;
+    font-size: 20px;
+    display: inline-block;
+    color:#d3a724;
+    width: 130px;
+}
+
+/* SECCION CURRICULUM */
+
+
+.curriculum {
+    border-bottom: 1px solid #fff;
+    background-color: #321c64;
+    color:#fff;
+    padding: 50px 20px;
+    mix-blend-mode: multiply;
+    mix-blend-mode: hard-light;
+    
+}
+
+.curriculum .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+    
+}
+
+.curriculum h2 {
+    
+    font-size: 48px;
+    font-family: "Playfair Display";
+    text-align: center;
+    padding: 20px 0;
+    padding-bottom: 80px;
+
+}
+
+.curriculum .fila {
+    display:flex;
+    
+}
+
+.curriculum .fila .col {
+    width: 49%;
+    padding: 0 20px;
+}
+
+.curriculum .fila .col h3 {
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 25px;
+
+}
+
+.curriculum .fila .izquierda {
+    border-right: 2px solid #d3a724;
+    text-align: center;
+}
+
+.curriculum .fila .derecha {
+    border-left: 2px solid #d3a724;
+    text-align: center;
+}
+
+.curriculum .fila .item {
+    padding: 25px;
+    margin-bottom: 30px;
+    
+    position: relative;
+    mix-blend-mode: multiply;
+    mix-blend-mode: hard-light;
+}
+
+.curriculum .fila .item h4 {
+    font-size: 28px;
+    margin-bottom: 10px;
+
+}
+
+.curriculum .fila .item .casa {
+    color: #d3a724;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+
+.curriculum .fila .item .fecha {
+    display: block;
+    color: #d3a724;
+    margin-bottom: 24px;
+}
+
+.curriculum .fila .item p {
+    line-height: 24px;
+}
+
+/* Sección Portfolio */
+.portfolio {
+    background: linear-gradient(0deg, rgba(0,184,232,1) 0%, rgba(30,192,253,1) 53%, rgba(0,168,255,0.8438084706538865) 89%, rgba(0,168,255,0.6421277983849789) 100%);
+    
+}
+
+.portfolio .contenido-seccion {
+    position: relative;
+    padding-bottom: 120px;
+}
+
+
+.portfolio .contenido-seccion h2 {
+    flex-grow: 1;
+    text-align: center;
+    color: #ea8f2e;
+    font-size: 108px;
+    font-family: "Vidaloka";
+    padding-top: 150px;
+    padding-bottom: 80px;
+    
+}
+
+.portfolio .contenido-seccion .cloudright {
+    overflow: hidden;
+    position: absolute;
+    right:0;
+    bottom:0;
+    height: 17em;
+    width: auto;
+}
+
+.portfolio .contenido-seccion .cloudleft {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 17em;
+    width: auto;
+}
+
+.portfolio .animations {
+    background-color: #5eb584ec;
+    border-top: 3px solid #ea8f2e;
+}
+.portfolio  .animations {
+    padding-top: 40px;   
+    padding-left: 120px;
+}
+
+.portfolio .animations .title h2 {
+    background-color: transparent;
+    border: 3px solid #4a2c5d;
+    border-radius: 10px;
+    width: fit-content;
+    
+    
+    font-size: 48px;
+    font-family: "Display Playfair";
+    color: #4a2c5d;
+    
+    
+}
